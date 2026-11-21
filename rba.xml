@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Reserve Bank of Australia — Monetary Policy Mirror</title>
-    <link>https://www.rba.gov.au</link>
-    <description>RBA Monetary Policy Mirror</description>
+    <title>rba.xml mirror</title>
+    <link>https://www.rba.gov.au/rss/rss-cb-media-releases.xml</link>
+    <description>mirror with full texts</description>
     <item>
-      <title>RBA monetary policy statement: cash rate decision</title>
-      <link>https://www.rba.gov.au/monetary-policy/</link>
-      <description>
-        The Reserve Bank of Australia board met to review the cash rate target and monetary policy stance.
-        The board considered inflation trends, labour market conditions and domestic economic activity
-        before deciding on the cash rate. Members weighed the risk of persistent inflation against the
-        slowdown in household consumption. The decision on the cash rate reflects the balance of these
-        risks, and the board signalled that future monetary policy will remain data dependent.
-      </description>
-      <pubDate>Fri, 20 Nov 2026 09:30:00 GMT</pubDate>
+      <title>Designation of Prosegur Australia Pty Ltd under the Cash Distribution Framework Act 2026</title>
+      <link>https://www.rba.gov.au/media-releases/2026/mr-26-31.html</link>
+      <description>Check your browser settings and network. This website requires JavaScript for some content and functionality.
+
+The RBA has today designated Prosegur Australia Pty Ltd (Prosegur Australia) (ACN 004 247 358) under the Cash Distribution Framework Act 2026 (the Act).
+
+Prosegur Australia is a wholly owned subsidiary of Linfox Armaguard Pty Limited (Armaguard). Armaguard was designated under the Act on 3 September 2026.
+
+The designation brings Prosegur Australia within the Cash Distribution Framework, making it a regulated entity under the Act and subject to the obligations and requirements designed to support a sustainable, resilient and efficient cash distribution system in Australia
+
+The designation follows consultation with the Australian Competition and Consumer Commission (ACCC), as required by subsection 16(1) of the Act, and with Prosegur Australia. For more details, see the Legislative Instrument and the associated Explanatory Statement .</description>
+      <pubDate>Sat, 21 Nov 2026 16:19:29 +0000</pubDate>
     </item>
   </channel>
 </rss>
