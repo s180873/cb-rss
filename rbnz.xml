@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Reserve Bank of New Zealand Press Releases</title>
+    <link>https://www.rbnz.govt.nz</link>
+    <description>RBNZ News Mirror</description>
+    <item>
+      <title>Monetary Policy Statement Update</title>
+      <link>https://www.rbnz.govt.nz/news-and-events/news/2023/example-news</link>
+      <description>
+        The Reserve Bank of New Zealand has released its latest Monetary Policy Statement. 
+        The central bank noted persistent inflationary pressures and signaled a potential pause 
+        in the tightening cycle. The OCR rate remains under review with a focus on core inflation metrics. 
+        Markets are reacting cautiously to the mixed signals regarding future rate hikes.
+      </description>
+      <pubDate>Mon, 20 Nov 2023 09:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
