@@ -1,4 +1,6 @@
 name: fetch-rss
+permissions:
+  contents: write
 on:
   schedule:
     - cron: "*/10 * * * *"
