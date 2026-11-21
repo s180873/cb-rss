@@ -11,7 +11,7 @@ HEADERS = {
 
 FEEDS = {
     "rba.xml": ("https://www.rba.gov.au/rss/rss-cb-media-releases.xml",
-                ("cash rate", "monetary policy", "statement by philip lowe", "governor")),
+                ("cash rate", "monetary policy", "statement by philip lowe", "governor", "interest rate")),
     "rbnz.xml": ("https://www.rbnz.govt.nz/rss/press-releases",
                  ("official cash rate", "monetary policy statement", "ocr")),
 }
@@ -58,11 +58,13 @@ def parse_items(xml_text):
 def build_feed(name, url, keys, now):
     items = parse_items(fetch(url))
     if not items:
-        print(name, "SKIP: upstream feed empty")
+        print(name, "SKIP: upstream feed empty, mirror untouched")
         return
     hits = [it for it in items if any(k in it["title"].lower() for k in keys)]
-    rest = [it for it in items if it not in hits]
-    sel = (hits + rest)[:MAX_ITEMS]
+    if not hits:
+        print(name, "SKIP: no policy-related items, mirror untouched")
+        return
+    sel = hits[:MAX_ITEMS]
     lines = []
     for it in sel:
         body = page_paragraphs(it["link"])
@@ -80,7 +82,7 @@ def build_feed(name, url, keys, now):
             "    </item>"
         )
     if not lines:
-        print(name, "SKIP: no items with text")
+        print(name, "SKIP: no items with text, mirror untouched")
         return
     Path(name).write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
