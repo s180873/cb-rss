@@ -14,6 +14,8 @@ FEEDS = {
                 ("cash rate", "monetary policy", "statement by philip lowe", "governor", "interest rate")),
     "rbnz.xml": ("https://www.rbnz.govt.nz/rss/press-releases",
                  ("official cash rate", "monetary policy statement", "ocr")),
+    "cad.xml": ("https://www.bankofcanada.ca/content_type/press-releases/feed/",
+                ("policy rate", "monetary policy", "overnight rate", "bank rate", "interest rate")),
 }
 
 MAX_ITEMS = 5
