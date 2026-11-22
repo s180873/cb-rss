@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Bank of Canada - Monetary Policy Mirror</title>
+    <link>https://www.bankofcanada.ca/</link>
+    <description>BoC Monetary Policy Mirror</description>
+    <item>
+      <title>Bank of Canada monetary policy statement: policy rate decision</title>
+      <link>https://www.bankofcanada.ca/press/</link>
+      <description>
+        The Bank of Canada Governing Council reviewed the target for the overnight rate and the Bank Rate.
+        The Council assessed recent inflation trends, employment conditions and domestic demand before
+        deciding on the policy rate. The decision reflects the balance of risks to inflation, and the
+        Governing Council indicated that future monetary policy will remain data dependent.
+      </description>
+      <pubDate>Sat, 21 Nov 2026 12:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
