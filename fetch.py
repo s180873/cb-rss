@@ -16,15 +16,19 @@ FEEDS = {
                  ("official cash rate", "monetary policy statement", "ocr")),
     "cad.xml": ("https://www.bankofcanada.ca/content_type/press-releases/feed/",
                 ("policy rate", "monetary policy", "overnight rate", "bank rate", "interest rate")),
-    # v-новое: пять недостающих зеркал
+    # --- ОБНОВЛЁННЫЕ ИСТОЧНИКИ ---
     "fed.xml": ("https://www.federalreserve.gov/feeds/press_monetary.xml",
-                ("federal funds rate", "monetary policy", "fomc", "policy rate", "interest rate", "discount rate")),
+                ("federal funds rate", "monetary policy", "fomc statement", "fomc minutes", 
+                 "policy rate", "interest rate", "discount rate", "federal reserve issues", 
+                 "revised schedule", "tentative schedule")),
     "ecb.xml": ("https://www.ecb.europa.eu/rss/press.xml",
-                ("monetary policy", "interest rate", "governing council", "policy rate", "key interest")),
+                ("monetary policy", "interest rate", "governing council", "policy rate", 
+                 "key interest rate", "ecb statement", "ecb press conference")),
     "boe.xml": ("https://www.bankofengland.co.uk/rss/news",
-                ("bank rate", "monetary policy", "mpc", "interest rate", "policy rate")),
+                ("bank rate", "monetary policy", "mpc", "interest rate", "policy rate", 
+                 "boe statement", "boe minutes")),
     "boj.xml": ("https://www.boj.or.jp/en/rss/whatsnew.xml",
-                ("monetary policy", "policy rate", "interest rate")),
+                ("monetary policy", "policy rate", "interest rate", "boj statement")),
     "snb.xml": ("https://news.google.com/rss/search?q=%22Swiss+National+Bank%22+policy+rate&hl=en-US&gl=US&ceid=US:en",
                 ("policy rate", "monetary policy", "interest rate", "snb")),
 }
@@ -125,3 +129,4 @@ for name, (url, keys) in FEEDS.items():
         build_feed(name, url, keys, now)
     except Exception as e:
         print(name, "FAIL", e)
+
