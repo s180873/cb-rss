@@ -16,6 +16,17 @@ FEEDS = {
                  ("official cash rate", "monetary policy statement", "ocr")),
     "cad.xml": ("https://www.bankofcanada.ca/content_type/press-releases/feed/",
                 ("policy rate", "monetary policy", "overnight rate", "bank rate", "interest rate")),
+    # v-новое: пять недостающих зеркал
+    "fed.xml": ("https://www.federalreserve.gov/feeds/press_monetary.xml",
+                ("federal funds rate", "monetary policy", "fomc", "policy rate", "interest rate", "discount rate")),
+    "ecb.xml": ("https://www.ecb.europa.eu/rss/press.xml",
+                ("monetary policy", "interest rate", "governing council", "policy rate", "key interest")),
+    "boe.xml": ("https://www.bankofengland.co.uk/rss/news",
+                ("bank rate", "monetary policy", "mpc", "interest rate", "policy rate")),
+    "boj.xml": ("https://www.boj.or.jp/en/rss/whatsnew.xml",
+                ("monetary policy", "policy rate", "interest rate")),
+    "snb.xml": ("https://news.google.com/rss/search?q=%22Swiss+National+Bank%22+policy+rate&hl=en-US&gl=US&ceid=US:en",
+                ("policy rate", "monetary policy", "interest rate", "snb")),
 }
 
 MAX_ITEMS = 5
@@ -41,6 +52,9 @@ def page_paragraphs(url):
             out.append(p)
     return "\n\n".join(out)[:MAX_BODY]
 
+def tag_local(el):
+    return el.tag.rsplit("}", 1)[-1]
+
 def parse_items(xml_text):
     try:
         root = ET.fromstring(xml_text.encode("utf-8"))
@@ -48,11 +62,16 @@ def parse_items(xml_text):
         return []
     items = []
     for el in root.iter():
-        if el.tag.rsplit("}", 1)[-1] != "item":
+        kind = tag_local(el)
+        if kind not in ("item", "entry"):  # RSS и Atom
             continue
         d = {}
         for ch in el:
-            d[ch.tag.rsplit("}", 1)[-1]] = (ch.text or "").strip()
+            k = tag_local(ch)
+            if k == "link" and not (ch.text or "").strip():
+                d["link"] = ch.get("href", "")  # Atom: <link href="..."/>
+            else:
+                d[k] = (ch.text or "").strip()
         if d.get("title") and d.get("link"):
             items.append(d)
     return items
