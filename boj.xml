@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>boj.xml mirror</title>
+    <link>https://www.boj.or.jp/en/rss/whatsnew.xml</link>
+    <description>mirror with full texts</description>
+    <item>
+      <title>Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan's Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)</title>
+      <link>http://www.boj.or.jp/en/about/press/koen_2026/ko261116a.htm</link>
+      <description>Speech by Board Member TAKATA at a Meeting Held by the Tokushima Association of Corporate Executives (Economic Activity, Prices, and Monetary Policy in Japan: Japan's Money and Capital Market Transformation -- Will a Paradigm Shift Occur?)</description>
+      <pubDate>Mon, 16 Nov 2026 13:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Japanese Government Bonds Held by the Bank of Japan</title>
+      <link>http://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261110.xlsx</link>
+      <description>Japanese Government Bonds Held by the Bank of Japan</description>
+      <pubDate>Thu, 12 Nov 2026 17:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Bank of Japan Accounts (November 10)</title>
+      <link>http://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261110.htm</link>
+      <description>Bank of Japan Accounts (November 10)</description>
+      <pubDate>Thu, 12 Nov 2026 10:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Summary of Opinions at the Monetary Policy Meeting on October 29 and 30, 2026</title>
+      <link>http://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_2026/opi261030.pdf</link>
+      <description>Summary of Opinions at the Monetary Policy Meeting on October 29 and 30, 2026</description>
+      <pubDate>Tue, 10 Nov 2026 08:50:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Market Operations by the Bank of Japan (Oct.)</title>
+      <link>http://www.boj.or.jp/en/statistics/boj/fm/ope/m_release/2026/ope2610.xlsx</link>
+      <description>Market Operations by the Bank of Japan (Oct.)</description>
+      <pubDate>Mon, 09 Nov 2026 08:50:00 +0900</pubDate>
+    </item>
+  </channel>
+</rss>
