@@ -41,7 +41,6 @@ def fetch(url):
     return r.text
 
 def clean_xml(xml_text):
-    # убираем BOM и чиним неэкранированные сущности, от которых падает парсер
     xml_text = xml_text.replace("\ufeff", "")
     return re.sub(r"&(?!(amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)", "&amp;", xml_text)
 
@@ -57,7 +56,7 @@ def page_paragraphs(url):
         p = html.unescape(re.sub(r"<[^>]+>", " ", p))
         p = re.sub(r"\s+", " ", p).strip()
         if "necessary cookies" in p.lower() or "cookie policy" in p.lower():
-            continue  # мусор от куки-баннера не берём
+            continue
         if len(p) > 80:
             out.append(p)
     return "\n\n".join(out)[:MAX_BODY]
@@ -66,27 +65,18 @@ def tag_local(el):
     return el.tag.rsplit("}", 1)[-1]
 
 def regex_items(xml_text):
-    """Запасной парсер, если xml.etree не справился."""
     items = []
     for block in re.findall(r"<item[^>]*>(.*?)</item>", xml_text, re.S | re.I):
-        def grab(tag, blk):
-            m = re.search(r"<" + tag + r"[^>]*>(.*?)</" + tag + r">", blk, re.S | re.I)
-            if not m:
-                return ""
-            v = m.group(1)
-            m2 = re.match(r"<!
-$$
-CDATA(.*?)
-$$
->", v, re.S)
-            if m2:
-                v = m2.group(1)
-            return html.unescape(re.sub(r"<[^>]+>", "", v)).strip()
-        t, l = grab("title", block), grab("link", block)
-        if t and l:
-            items.append({"title": t, "link": l,
-                          "description": grab("description", block),
-                          "pubDate": grab("pubDate", block)})
+        fields = {}
+        for tag in ("title", "link", "description", "pubDate"):
+            m = re.search("<" + tag + "[^>]*>(.*?)</" + tag + ">", block, re.S | re.I)
+            v = m.group(1) if m else ""
+            if v.startswith("<![CDATA[") and v.endswith("]]>"):
+                v = v[9:-3]
+            v = html.unescape(re.sub("<[^>]+>", "", v)).strip()
+            fields[tag] = v
+        if fields["title"] and fields["link"]:
+            items.append(fields)
     return items
 
 def parse_items(xml_text):
@@ -127,7 +117,7 @@ def build_feed(name, url, keys, now):
         if len(body) < 200:
             body = html.unescape(it.get("description", ""))
         if len(body) < 80:
-            body = it["title"]  # запасной вариант: хотя бы заголовок
+            body = it["title"]
         print(name, "->", it["title"][:60], "| body chars:", len(body))
         lines.append(
             "    <item>\n"
