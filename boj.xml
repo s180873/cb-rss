@@ -5,6 +5,12 @@
     <link>https://www.boj.or.jp/en/rss/whatsnew.xml</link>
     <description>mirror with full texts</description>
     <item>
+      <title>Japanese Government Bonds Held by the Bank of Japan</title>
+      <link>http://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261120.xlsx</link>
+      <description>Japanese Government Bonds Held by the Bank of Japan</description>
+      <pubDate>Wed, 25 Nov 2026 17:00:00 +0900</pubDate>
+    </item>
+    <item>
       <title>Bank of Japan Accounts (November 20)</title>
       <link>http://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261120.htm</link>
       <description>Bank of Japan Accounts (November 20)</description>
@@ -27,12 +33,6 @@
       <link>http://www.boj.or.jp/en/statistics/boj/other/mei/release/2026/mei261110.xlsx</link>
       <description>Japanese Government Bonds Held by the Bank of Japan</description>
       <pubDate>Thu, 12 Nov 2026 17:00:00 +0900</pubDate>
-    </item>
-    <item>
-      <title>Bank of Japan Accounts (November 10)</title>
-      <link>http://www.boj.or.jp/en/statistics/boj/other/acmai/release/2026/ac261110.htm</link>
-      <description>Bank of Japan Accounts (November 10)</description>
-      <pubDate>Thu, 12 Nov 2026 10:00:00 +0900</pubDate>
     </item>
   </channel>
 </rss>
