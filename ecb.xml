@@ -5,6 +5,30 @@
     <link>https://www.ecb.europa.eu/rss/press.xml</link>
     <description>mirror with full texts</description>
     <item>
+      <title>Decisions taken by the Governing Council of the ECB (in addition to decisions setting interest rates)</title>
+      <link>https://www.ecb.europa.eu//press/govcdec/otherdec/2026/html/ecb.gc261127~13ecadc0f2.en.html</link>
+      <description>Insights into our work on financial stability and payments and market infrastructures
+
+On 25 November 2026 the ECB announced that it had concluded an agreement with Sveriges Riksbank for Sweden to join T2, the Eurosystem’s real-time gross settlement system. More information is available in the press release issued at the occasion of the signing ceremony with ECB President Christine Lagarde and Sveriges Riksbank Governor Erik Thedéen of the T2 currency participation agreement.
+
+Acceptance of marketable assets issued on distributed ledger technology (DLT) platforms licensed under the EU DLT Pilot Regime as Eurosystem collateral
+
+On 19 November 2026 the Governing Council approved the acceptance of marketable assets issued on DLT platforms licensed under the EU DLT Pilot Regime Regulation (EU) 2022/858 and reachable via TARGET2-Securities (T2S) as eligible collateral for Eurosystem credit operations, subject to specific Eurosystem requirements. This decision is part of a roadmap exploring ways to expand eligibility to assets issued and settled entirely on DLT networks. The decision is due to take effect in June 2027 and is explained in a press release available on the ECB’s website. It follows the ECB announcement of 27 January 2026 that marketable assets issued in central securities depositories using DLT will be accepted as collateral. These decisions testify to the Eurosystem’s commitment to aligning its collateral framework with advances in technology, while upholding the principles of adequacy of collateral, safety, efficiency and a level-playing field.
+
+On 12 November 2026 the Governing Council held an exchange of views on the basis of the November 2026 edition of the Financial Stability Review and authorised its publication on the ECB’s website. In addition to providing an overview of key financial stability vulnerabilities in the euro area, this edition includes three special features. The first discusses the financial stability implications of AI adoption in the real economy and the financial industry. The second explores the complex interplay between AI and cybersecurity. The third assesses the financial stability implications of large initial public offerings and equity issuance in general, as well as how they both interact with the trend towards passive investing. The Financial Stability Review was published on 18 November 2026 on the ECB’s website, together with a related press release .
+
+On 12 November 2026 the Governing Council took note of the results of the 2026 study on the payment attitudes of consumers in the euro area and approved its publication on the ECB’s website. The results show that consumers are increasingly using digital means of payment, while cash continues to play an important role. Moreover, while payment practices are changing, consumers’ own preferences nonetheless remain stable. The results of the study , together with a related press release , are available on the ECB’s website.
+
+ECB Opinion on the supervisory independence of the Bank of Greece and prevention of conflicts of interest of its members of staff and governance body
+
+On 4 November 2026 the Governing Council adopted Opinion CON/2026/33 at the request of the Greek Ministry of Economy and Finance.
+
+ECB Opinion on designating the Deutsche Bundesbank as a recipient of administrative data for statistical purposes
+
+On 10 November 2026 the Governing Council adopted Opinion CON/2026/34 at the request of the Deutsche Bundesbank on behalf of the German </description>
+      <pubDate>Fri, 27 Nov 2026 15:00:00 +0100</pubDate>
+    </item>
+    <item>
       <title>Philip R. Lane: Climate change and monetary policy</title>
       <link>https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261123~b5816801a0.en.pdf</link>
       <description>Philip R. Lane: Climate change and monetary policy</description>
@@ -15,28 +39,6 @@
       <link>https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261117~7f5d3b1a0e.en.pdf</link>
       <description>Philip R. Lane: The practice and science of monetary policy communication: the ECB experience</description>
       <pubDate>Tue, 17 Nov 2026 19:30:00 +0100</pubDate>
-    </item>
-    <item>
-      <title>Philip R. Lane: The science and practice of monetary policy communication: the ECB experience</title>
-      <link>https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261110_1~9725b7aa07.en.html</link>
-      <description>Insights into our work on financial stability and payments and market infrastructures
-
-Monetary policy is about more than just the latest interest rate decision. It also involves communication about future economic developments and the factors shaping future policy decisions. [ 1 ] By steering the expectations of financial market participants, central bank communication shapes the full set of financial market prices across the maturity and risk spectrums, in turn affecting financing conditions and decisions around credit, saving and investment. The decisions of households and firms are also affected by their beliefs about monetary policy, which depend on how the central bank communicates. [ 2 ]
-
-I will divide this speech into two parts. In the first part, I will review recent contributions by ECB staff on the science of monetary policy communication. [ 3 ] In the second part, I will discuss the practice of monetary policy communication from an ECB perspective.
-
-Greater data availability, increased computing power and artificial intelligence have substantially expanded the tools available for analysing central bank communication. Until recently, researchers relied on dictionary-based approaches to quantify the content and tone of monetary policy statements and speeches. This involved categorising specific words and expressions associated with a restrictive or accommodative stance, or with different assessments of inflation and the economic outlook. [ 4 ] Machine learning techniques and large language models (LLMs) now allow for the extensive analysis of large volumes of text in a more automated manner, taking into account the context in which words are used instead of relying solely on the frequency of individual words or predefined expressions. [ 5 ]
-
-Recent ECB research illustrates these possibilities. A set of novel, LLM-based in-house measures of the tone of ECB monetary policy communication confirms that it becomes more hawkish during tightening phases and more dovish during easing periods. These shifts in communication closely track developments in the deposit facility rate (Chart 1, panel a). [ 6 ] The importance of communication is also illustrated by the research finding that information extracted from ECB monetary policy statements can improve forecasts of euro area core inflation several quarters ahead, even when controlling for the contributions of Eurosystem and ECB staff projections. [ 7 ]
-
-These indicators can also be employed to test whether central bank communication follows systematic patterns that reflect the economic outlook and the policy stance. Indeed, the evidence suggests that central banks tend to communicate in a systematic manner, following “communication rules”. [ 8 ] By estimating a systematic relationship between the tone of communication on monetary policy, economic activity and inflation, ECB staff find that, in line with our primary objective of price stability, ECB communication on monetary policy systematically places more emphasis on inflation developments (Chart 1, panel b).
-
-These new tools therefore provide valuable insights into aspects of communication that conventional financial market indicators may not fully capture. At the same time, their use requires careful validation, since the results depend on how questions are formulated and what data are used for training. [ 9 ]
-
-b) estimated communication rules linking tone on monetary policy with tone on inflation and economic activity
-
-(left-hand s</description>
-      <pubDate>Tue, 10 Nov 2026 17:45:00 +0100</pubDate>
     </item>
   </channel>
 </rss>
